@@ -1,17 +1,17 @@
-#Concentração de tensões baseado no caso do Comet (avião)
+#stress concentration based on the Comet model 
 
-def concentracao_tensoes (formato): 
+def stress_concentration (format): 
     
-    if formato == "quadrado": 
+    if format == "square": 
         kt = 300 #MPA
         
-    elif formato == "retangular":
+    elif format == "rectangular":
             kt = 250 #MPA
             
-    elif formato == "triangular":
+    elif format == "triangular":
                 kt = 200 #MPA
                 
-    elif formato == "circular": 
+    elif format == "circular": 
                     kt = 100 #MPA
                     
     else:
@@ -21,11 +21,11 @@ def concentracao_tensoes (formato):
 
 
 
-formatos = ["quadrado","retangular","triangular","circular"]
+formats = ["square","rectangular","triangular","circular"]
  
 
-for formato in formatos:
-      kt = concentracao_tensoes(formato)
+for format in formats:
+      kt = stress_concentration (format)
     
-      print (f"formato: {formato}")
+      print (f"format: {format}")
       print (f"concentracao de tensoes: {kt} MPa\n")
