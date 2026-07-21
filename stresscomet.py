@@ -28,4 +28,4 @@ for format in formats:
       kt = stress_concentration (format)
     
       print (f"format: {format}")
-      print (f"concentracao de tensoes: {kt} MPa\n")
+      print (f"stress concentration: {kt} MPa\n")
